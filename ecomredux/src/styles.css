@@ -1,0 +1,68 @@
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content-container {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.products-container, .cart-items-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item, .cart-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.buttons-container {
+  display: flex;
+  gap: 5px;
+}
+
+.cart-btn {
+  margin-bottom: 20px;
+  background-color: #f0c14b; 
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.add-to-cart-btn, .increase-btn, .decrease-btn, .delete-btn {
+  background-color: #ff9900; 
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8rem; 
+}
+
+.increase-btn, .decrease-btn {
+  font-size: 0.8rem;
+}
+
+.cart-total {
+  font-size: 1.2rem; 
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    margin: 10px;
+  }
+}
